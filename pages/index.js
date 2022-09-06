@@ -42,7 +42,7 @@ export default function Home() {
     setTimeout(() => {
       setLoading(false)
     }, 4000);
-    
+
     setTimeout(() => {
       setShowData(true)
     }, 4000);
@@ -51,8 +51,7 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+       
       </Head>
 
       {
