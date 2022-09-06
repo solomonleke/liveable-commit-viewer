@@ -1,129 +1,432 @@
-.container {
-  padding: 0 2rem;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+.wrapper{
+  margin-inline: 10%;
 }
-
-.main {
-  min-height: 100vh;
-  padding: 4rem 0;
-  flex: 1;
+.navbar{
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
+  margin-top: 48px;
 }
 
-.footer {
+.nav{
   display: flex;
-  flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
-  justify-content: center;
-  align-items: center;
+  
 }
 
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
+.logoText{
+  color: #18214D;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 34px;
+  letter-spacing: -0.6px;
+  cursor: pointer;
 }
 
-.title a {
-  color: #0070f3;
-  text-decoration: none;
+.navText{
+  color: #18214D;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: -0.4px;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+.pl{
+  padding-left: 64px;
 }
 
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
-}
-
-.title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
-}
-
-.title,
-.description {
+.header{
+  margin-top: 64px;
   text-align: center;
+  font-weight: 600;
+  font-size: 72px;
+  line-height: 80px;
+  letter-spacing: -3px;
+  color: #18214D;
+  width: 40%;
+  
 }
-
-.description {
-  margin: 4rem 0;
-  line-height: 1.5;
-  font-size: 1.5rem;
-}
-
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
-}
-
-.grid {
+.flex{
   display: flex;
-  align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
 }
 
-.card {
-  margin: 1rem;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
+.paraText{
+  width: 38%;
+  margin-top: 16px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: -0.4px;
+  color: #3E4462;
 }
 
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
+.searchGroup{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 64px;
+  margin-inline: 10%;
 }
 
-.card h2 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
+.inputGroup{
+  display: flex;
+  background-color: #DFE4EA;
+  border-radius: 8px;
+  width: 77%;
+  padding: 15px 19.01px;
+}
+.inputGroup:hover{
+  border: 2px solid #000000;
+}
+.inputBox:focus ~ .inputGroup{
+  border: 2px solid #000000;
+
+}
+.searchIcon{
+  font-size: 20px;
+  color: #29335C;
+  position: relative;
+  top: 5px;
+  padding-right: 10.41px;
+}
+.inputBox{
+  width: 100%;
+  border: 0;
+  background-color: transparent;
+  color: #29335C;
+  font-size: 20px;
+  line-height: 28px;
 }
 
-.card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
+.inputBox:focus {
+  outline: none;
+  background-color: transparent;
+
+}
+.inputBox::placeholder{
+  font-size: 20px;
+  color: #B1B5C5;
+  line-height: 28px;
+ 
+}
+.btn{
+  background-color: #F3663F;
+  border: 0;
+  color: #FFFFFF;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  border-radius: 8px;
+  padding-top: 17.4px;
+  padding-bottom: 12.6px;
+  padding-inline: 29px ;
+  cursor: pointer;
 }
 
-.logo {
-  height: 1em;
-  margin-left: 0.5rem;
+.btnIcon{
+  color: yellow;
+  font-size: 20px;
+  position: relative;
+  top: 3px;
 }
 
-@media (max-width: 600px) {
-  .grid {
+.suggestedText{
+  color: #3E4462;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.4px;
+  text-align: center;
+  margin-top: 24px ;
+
+}
+.suggestedRow{
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+}
+.singleSuggested{
+  background-color: #29335C;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19px;
+  letter-spacing: -0.4px;
+  text-align: center;
+  margin-inline: 16px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  
+}
+.section{
+  /* display: none; */
+}
+
+.groupLayer{
+  width: 100%;
+  background-color: #EFF2F6;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 36px;
+  padding-bottom: 36px;
+  padding-inline: 10%;
+}
+
+.groupLayer .inputGroup{
+  width: 55%;
+}
+.groupLayer .logoo{
+    padding-top: 10px;
+}
+
+.textCenter{
+  text-align: center;
+  color: #29335C;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 44px;
+  margin-top: 32px;
+  
+
+}
+.loadingText{
+  text-align: center;
+  color: #18214D;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #29335C;
+  margin-top: 32px;
+
+
+}
+
+.CommitGroup{
+  margin-top: 32px;
+  padding-inline: 10%;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+/* media queries */
+@media screen and (max-width: 1440px) {
+  .inputGroup{
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 1370px) {
+  .header{
+   
+    width: 50%;
+    
+  }
+  .paraText{
+    width: 45%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .header{
+   
+    width: 50%;
+    
+  }
+  .paraText{
+    width: 45%;
+  }
+  .wrapper{
+    margin-inline: 6%;
+  }
+  .searchGroup{
+   
+    margin-inline: 2%;
+  }
+}
+@media screen and (max-width: 1192px ) {
+  .groupLayer{
+    flex-direction: column;
+    
+  }
+  .groupLayer .inputGroup{
     width: 100%;
+    margin-bottom: 10px;
+  }
+  .logoo{
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+}
+@media screen and (max-width: 1024px ) {
+  .header{
+   
+    width: 57%;
+    font-size: 65px;
+    
+  }
+  .paraText{
+    width: 50%;
+  }
+
+  .searchGroup{
     flex-direction: column;
   }
-}
+  .groupLayer{
+    flex-direction: column;
+    
+  }
+  .groupLayer .inputGroup{
+    width: 55%;
+  }
 
-@media (prefers-color-scheme: dark) {
-  .card,
-  .footer {
-    border-color: #222;
+  .btn{
+    margin-top: 24px;
   }
-  .code {
-    background: #111;
+  .inputGroup{
+    width: 100%;
   }
-  .logo img {
-    filter: invert(1);
+  .inputBox{
+    width: 100%;
+  }
+}
+@media screen and (max-width: 900px ) {
+  .header{
+   
+    width: 60%;
+    font-size: 65px;
+    
+  }
+  .paraText{
+    width: 55%;
+  }
+  .groupLayer .inputGroup{
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .button{
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px ) {
+  .header{
+   
+    width: 75%;
+    font-size: 65px;
+    
+  }
+  .paraText{
+    width: 65%;
+  }
+  .navbar{
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .nav{
+    justify-content: center;
+    margin-top: 16px;
+  }
+  .pl{
+    padding-left: 32px;
+  }
+  .groupLayer .inputGroup{
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .suggestedRow{
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 24px;
+  }
+
+  .singleSuggested{
+    margin: 10px auto;
+  }
+}
+@media screen and (max-width: 600px ) {
+  .header{
+   
+    width: 76%;
+    font-size: 56px;
+    line-height: 62px;
+    
+  }
+  .paraText{
+    width: 80%;
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .groupLayer .inputGroup{
+    display: none;
+  }
+  .button{
+    display: none;
+  }
+  .searchGroup{
+   
+    margin-inline: 5%;
+  }
+  
+}
+@media screen and (max-width: 494px ) {
+  .header{
+   
+    width: 96%;
+    font-size: 56px;
+    line-height: 62px;
+    
+  }
+
+  .paraText{
+    width: 90%;
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .wrapper{
+    margin-inline: 5%
+  }
+  .searchGroup{
+   
+    margin-inline: 2%;
+  }
+}
+@media screen and (max-width: 375px ) {
+  .header{
+   
+    width: 100%;
+    font-size: 56px;
+    line-height: 62px;
+    
+  }
+  .paraText{
+    width: 100%;
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .wrapper{
+    margin-inline: 2%
+  }
+}
+@media screen and (max-width: 335px ) {
+  .header{
+   
+    width: 100%;
+    font-size: 50px;
+    line-height: 52px;
+    
+  }
+  .paraText{
+    width: 100%;
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .wrapper{
+    margin-inline: 2%
   }
 }
