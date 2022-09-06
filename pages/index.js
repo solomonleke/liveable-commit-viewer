@@ -16,17 +16,36 @@ export default function Home() {
 
   const [ShowCommit, setShowCommit] = useState(false)
   const [Loading, setLoading] = useState(false)
+  const [ShowData, setShowData] = useState(false)
   const [SearchText, setSearchText] = useState("")
 
 
+
   const SearchBtn = ()=>{
+    setLoading(true)
     setShowCommit(true)
+    
+    setTimeout(() => {
+      setLoading(false)
+    }, 4000);
+
+    setTimeout(() => {
+      setShowData(true)
+    }, 4000);
+
   }
 
   const SuggestBtn = (text)=>{
+    setLoading(true)
     setSearchText(text)
     setShowCommit(true)
-
+    setTimeout(() => {
+      setLoading(false)
+    }, 4000);
+    
+    setTimeout(() => {
+      setShowData(true)
+    }, 4000);
     
   }
   return (
@@ -113,10 +132,17 @@ export default function Home() {
             }
            
 
-
-            <CommitCard/>
-            <CommitCard/>
-            <CommitCard/>
+            {
+              ShowData && (
+                <div>
+                <CommitCard/>
+                <CommitCard/>
+                <CommitCard/>
+                <CommitCard/>
+                </div>
+              )
+            }
+           
           </div>
         )
       }
