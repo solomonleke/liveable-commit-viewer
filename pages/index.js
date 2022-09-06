@@ -115,6 +115,8 @@ export default function Home() {
 
 
             <CommitCard/>
+            <CommitCard/>
+            <CommitCard/>
           </div>
         )
       }

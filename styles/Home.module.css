@@ -211,6 +211,53 @@
   justify-content: space-between;
 }
 
+.userGroup{
+  width: 16%;
+  
+}
+.commitFlex{
+  display: flex;
+  justify-content: space-between;
+  width: 63%;
+}
+
+.avatar{
+  background-color: #C4C4C4;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+.userName{
+  text-align: center;
+  margin-top: 4px;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: -0.55px;
+  color: #18214D;
+}
+.commitMsg{
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: -0.4px;
+  color: #18214D;
+  position: relative;
+  left: -12%;
+  top: 10px
+}
+.commitDate{
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: -0.4px;
+  color: #18214D;
+  position: relative;
+  
+  top: 13px
+}
+
 
 
 /* media queries */
@@ -229,11 +276,21 @@
   .paraText{
     width: 45%;
   }
+  .commitMsg{
+    
+    left: -7%;
+    
+  }
 }
 @media screen and (max-width: 1200px) {
   .header{
    
     width: 50%;
+    
+  }
+  .commitMsg{
+    
+    left: 2%;
     
   }
   .paraText{
@@ -260,6 +317,22 @@
     text-align: center;
     margin-bottom: 10px;
   }
+  .commitFlex{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+
+  .CommitGroup{
+  flex-flow: wrap;
+   flex-grow: 2;
+  }
+  /* .commitDate{
+    float: right;
+  } */
+  
 
 }
 @media screen and (max-width: 1024px ) {
@@ -280,6 +353,7 @@
     flex-direction: column;
     
   }
+
   .groupLayer .inputGroup{
     width: 55%;
   }
@@ -293,6 +367,32 @@
   .inputBox{
     width: 100%;
   }
+
+  .CommitGroup{
+    
+    padding-inline: 8%;
+    
+  }
+  .commitFlex{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .CommitGroup{
+    padding-inline: 3%;
+  }
+}
+
+@media screen and (max-width: 1000px ) {
+  .CommitGroup{
+    
+    padding-inline: 3%;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+  }
+
 }
 @media screen and (max-width: 900px ) {
   .header{
@@ -322,6 +422,17 @@
   .paraText{
     width: 65%;
   }
+  .userGroup{
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+  }
+
+  .avatar{
+    height: 30px;
+    width: 30px;
+    margin-top: 7px;
+  }
   .navbar{
     flex-direction: column;
     justify-content: center;
@@ -348,6 +459,16 @@
   .singleSuggested{
     margin: 10px auto;
   }
+
+  .commitMsg{
+    width: 100%;
+  }
+  .commitDate{
+    display: inline-flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-top: -45px;
+  }
 }
 @media screen and (max-width: 600px ) {
   .header{
@@ -356,6 +477,11 @@
     font-size: 56px;
     line-height: 62px;
     
+  }
+  .userGroup{
+    display: flex;
+    justify-content: space-between;
+    width: 25%;
   }
   .paraText{
     width: 80%;
@@ -382,6 +508,10 @@
     line-height: 62px;
     
   }
+  .userGroup{
+    
+    width: 35%;
+  }
 
   .paraText{
     width: 90%;
@@ -403,6 +533,10 @@
     font-size: 56px;
     line-height: 62px;
     
+  }
+  .userGroup{
+    
+    width: 38%;
   }
   .paraText{
     width: 100%;
